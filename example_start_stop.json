@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "name": "Start-stop latch",
+  "rungs": [
+    {
+      "coil": "Q0",
+      "branches": [
+        [
+          {
+            "tag": "I0",
+            "nc": false
+          },
+          {
+            "tag": "I1",
+            "nc": true
+          }
+        ],
+        [
+          {
+            "tag": "Q0",
+            "nc": false
+          },
+          {
+            "tag": "I1",
+            "nc": true
+          }
+        ]
+      ]
+    },
+    {
+      "coil": "Q1",
+      "branches": [
+        [
+          {
+            "tag": "Q0",
+            "nc": false
+          },
+          {
+            "tag": "I2",
+            "nc": false
+          }
+        ]
+      ]
+    }
+  ]
+}

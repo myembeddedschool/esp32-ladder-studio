@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "name": "DOL - branch around START only",
+  "rungs": [
+    {
+      "coil": "Q0",
+      "prefix": [
+        {
+          "tag": "I2",
+          "nc": true
+        },
+        {
+          "tag": "I1",
+          "nc": true
+        }
+      ],
+      "suffix": [],
+      "branches": [
+        [
+          {
+            "tag": "I0",
+            "nc": false
+          }
+        ],
+        [
+          {
+            "tag": "Q0",
+            "nc": false
+          }
+        ]
+      ]
+    },
+    {
+      "coil": "Q1",
+      "branches": [
+        [
+          {
+            "tag": "Q0",
+            "nc": false
+          }
+        ]
+      ]
+    }
+  ]
+}

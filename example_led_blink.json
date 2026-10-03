@@ -1,0 +1,47 @@
+{
+  "version": 3,
+  "name": "LED blink - one second ON and OFF",
+  "rungs": [
+    {
+      "kind": "TON",
+      "coil": "T0",
+      "preset_ms": 1000,
+      "branches": [
+        [
+          {
+            "tag": "T1",
+            "nc": true
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "TON",
+      "coil": "T1",
+      "preset_ms": 1000,
+      "branches": [
+        [
+          {
+            "tag": "T0",
+            "nc": false
+          }
+        ]
+      ]
+    },
+    {
+      "coil": "Q0",
+      "branches": [
+        [
+          {
+            "tag": "T0",
+            "nc": false
+          },
+          {
+            "tag": "T1",
+            "nc": true
+          }
+        ]
+      ]
+    }
+  ]
+}
